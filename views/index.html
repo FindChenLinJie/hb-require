@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="wrap-content"></div>
+    <!-- hb模板 -->
+    <script id="tpl" type="text/x-handlebars-template">
+        <div class="demo">
+            {{#if student}} {{#each student}}
+            <ul>
+                <li>{{name}}</li>
+                <li>{{sex}}</li>
+                <li>{{age}}</li>
+            </ul>
+            {{/each}} {{/if}}
+        </div>
+    </script>
+    
+    <script src="../lib/require/require.js"></script>
+    <script src="../lib/require/require-config.js"></script>
+    <script src="../entry.js"></script>
+</body>
+
+</html>
